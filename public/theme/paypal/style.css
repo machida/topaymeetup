@@ -422,3 +422,63 @@ h1 a {
   background-repeat: repeat-y;
   background-position: left top;
 }
+#body section .image img {
+  max-width:550px;
+  display:block;
+  margin:auto 1.7em;
+}
+#body section ul {
+  list-style-type: disc;
+  margin-left: 2em;
+  list-style-position: outside;
+}
+#body section ol {
+  list-style-type: decimal;
+  margin-left: 2em;
+  list-style-position: outside;
+}
+#body section li {
+  list-style-position: outside;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  font-size: 14px;
+}
+#body section blockquote {
+  background-color: #CCC;
+  margin-left: 25px;
+  display: block;
+  margin-right: 25px;
+  padding-top: 12px;
+  padding-right: 22px;
+  padding-bottom: 1px;
+  padding-left: 22px;
+  margin-bottom: 1.7em;
+  border-radius: 6px;
+}
+#body section blockquote:before {
+    content:"\0022";
+    font-size: 96px;
+    font-weight: bold;
+    line-height: 20px;
+    display: block;
+    margin-top: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: right;
+    font-family:"Times New Roman";
+    font-style:italic;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #ddd;
+    margin-bottom: -30px;
+    }
+#body section pre code {
+  color: #0C0;
+  background-color: #000;
+  display: block;
+  padding: 12px;
+  margin-bottom: 1.7em;
+  font-size: 13px;
+  line-height: 1.4;
+  overflow: auto;
+}
