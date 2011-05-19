@@ -253,21 +253,21 @@ body {
 }
 #body section h2 {
   font-size: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #CE067D;
-  font-family: 'Copse', serif;
+  font-family: 'Copse', sun-serif;
 }
 #body section h3 {
   font-size: 20px;
   margin-bottom: 18px;
   color: #CE067D;
-  font-family: 'Copse', serif;
+  font-family: 'Copse', sun-serif;
 }
 #body section h4 {
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 2em;
   color: #CE067D;
-  font-family: 'Copse', serif;
+  font-family: 'Copse', sun-serif;
 }
 #body section hr {
   background-image: url(images/dot_line.gif);
@@ -277,6 +277,8 @@ body {
   border-right-style: none;
   border-bottom-style: none;
   border-left-style: none;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 #main article header {
   background-color: #b6b6b6;
@@ -431,16 +433,17 @@ h1 a {
   list-style-type: disc;
   margin-left: 2em;
   list-style-position: outside;
+  margin-bottom: 2em;
 }
 #body section ol {
   list-style-type: decimal;
-  margin-left: 2em;
+  margin-left: 3em;
   list-style-position: outside;
 }
 #body section li {
   list-style-position: outside;
   line-height: 1.5;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
   font-size: 14px;
 }
 #body section blockquote {
