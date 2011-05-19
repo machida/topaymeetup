@@ -1,0 +1,19 @@
+<article>
+<header class="clearfix">
+<div class="date">
+<span class="day"><%= @post.created_at.strftime('%d') %></span>
+<span class="mounth"><%=  @post.created_at.strftime('%b') %></span>
+<span class="year"><%= @post.created_at.year %></span>
+</div>
+<h1><a href="<%= @entry.link %>"><%= @entry.title %></a></h1>
+</header>
+<section>
+<%= @entry.body %>
+</section>
+<footer>
+<% if logged_in? %>
+<p><a href="<%= @entry.edit_link %>"><%= t.edit %></a></p>
+<% end %>
+<p><%= comment_form %></p>
+</footer>
+</article>

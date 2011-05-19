@@ -1,0 +1,326 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+body {
+  background-image: url(../images/htmlgif);
+  background-color: #E4E2E3;
+  padding-top: 20px;
+}
+#header {
+  background-image: url(../images/header.png);
+  height: 207px;
+}
+.wide {
+  width:902px;
+  margin-right: auto;
+  margin-left: auto;
+    }
+#header .main {
+  display: block;
+  float: right;
+  height: 136px;
+  width: 527px;
+  padding-right: 15px;
+  padding-top: 30px;
+}
+#header .language {
+  float: left;
+  padding-left: 25px;
+  margin-top: 1px;
+}
+#header .language ul {
+  background-image: url(../images/header_nav.png);
+  display: block;
+}
+#header .language li {
+  display: inline;
+}
+#header .language a {
+  display: block;
+  float: left;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  font-size: 13px;
+  line-height: 15px;
+  height: 15px;
+}
+#header .sub {
+  float: left;
+  width: 300px;
+}
+#header .sub .global {
+  clear: both;
+}
+#header .sub .global {
+  margin-top: 102px;
+  float: left;
+  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+#header .sub .global li {
+  display:inline;
+}
+#header a {
+  text-decoration: none;
+}
+#header .sub .global li a {
+  display:block;
+  float:left;
+  background-color: #555;
+  box-shadow:inset #333 1px 1px 1px;
+  padding-right: 12px;
+  padding-left: 12px;
+  border-radius: 6px;
+  line-height: 30px;
+  font-family: 'Copse', serif;
+  font-size: 16px;
+}
+#header .sub .global li a:link,
+#header .sub .global li a:visited {
+  background-color: #555;
+  font-family: 'Copse', serif;
+  color: #FFF;
+}
+#header .sub .global li a:hover,
+#header .sub .global li a:active {
+  background-color: #666;
+  font-family: 'Copse', serif;
+}
+#main article header .date {
+  background-color: #F39;
+  height: 62px;
+  width: 70px;
+  float: left;
+  box-shadow:inset #333 0px 1px 2px;
+  border-radius: 6px;
+  padding-top: 8px;
+}
+#main article header .date span {
+  display: block;
+  text-align: center;
+}
+#main article header h1 {
+  font-size: 24px;
+  float: left;
+  display: block;
+  width: 440px;
+  line-height: 1.4;
+  margin-left: 15px;
+  font-family: 'Copse', serif;
+  margin-top: -3px;
+  text-shadow:#CCC 0px 1px 1px;
+ }
+#body #main {
+  float: left;
+  width: 550px;
+}
+#body #sub {
+  float: right;
+  width: 320px;
+}
+#body {
+  padding-top: 25px;
+}
+#main article section p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom:2em;
+}
+#main article section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #CE067D;
+  font-family: 'Copse', serif;
+}
+#main article section h3 {
+  font-size: 20px;
+  margin-bottom: 18px;
+  color: #CE067D;
+  font-family: 'Copse', serif;
+}
+#main article section h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #CE067D;
+  font-family: 'Copse', serif;
+}
+#main article section hr {
+  background-image: url(../images/dot_line.gif);
+  display: block;
+  height: 1px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+}
+#main article header {
+  background-color: #b6b6b6;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow:inset #666 0px 1px 3px;
+  background-image: url(../images/article_h1.gif);
+}
+#main article .date .day {
+  font-size: 26px;
+  font-family: 'Aclonica', serif;
+  line-height: 26px;
+  vertical-align: middle;
+}
+#main article .date .mounth {
+  font-size: 16px;
+  font-family: 'Aclonica', serif;
+  line-height: 16px;
+  padding-bottom: 2px;
+}
+#main article .date .year {
+  font-size: 11px;
+  font-family: 'Copse', serif;
+  line-height: 11px;
+}
+#main article {
+  clear: both;
+  margin-bottom: 35px;
+}
+#sub nav ul li {
+  display: block;
+  margin-bottom: 15px;
+}
+#sub nav ul li .title {
+  background-color: #484848;
+  display: block;
+  line-height: 1.4;
+  padding: 8px;
+}
+#sub nav ul li .date {
+  background-color: #BCBABC;
+}

@@ -1,0 +1,13 @@
+<article>
+<header class="clearfix">
+<h1><a href="<%= @entry.link %>"><%= @entry.title %></a></h1>
+</header>
+<section class="clearfix">
+<%= @entry.body %>
+</section>
+<footer>
+<% if logged_in? %>
+<p><a href="<%= @entry.edit_link %>"><%= t.edit %></a></p>
+<% end %>
+</footer>
+</article>

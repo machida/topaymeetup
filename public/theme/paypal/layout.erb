@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link  href="http://fonts.googleapis.com/css?family=Copse:regular" rel="stylesheet" type="text/css" >
+<link  href="http://fonts.googleapis.com/css?family=Aclonica:regular" rel="stylesheet" type="text/css" >
+<% if entry? %>
+<title><%= @entry.title %> - <%= @site.title %></title>
+<% else %>
+<title><%= @site.title %></title>
+<% end %>
+<meta name="description" content="<%= @site.meta_description %>" />
+<meta name="keywords" content="<%= @site.meta_keywords %>" />
+<link rel="shortcut icon" href="<%= @theme.path %>/favicon.ico" />
+<link rel="alternate" href="/index.atom" type="application/atom+xml" />
+<link rel="stylesheet" href="<%= @theme.path %>/style.css" type="text/css" />
+<%= header %>
+</head>
+
+<body class="<%= @theme_types.join(' ') %>">
+<div id="header" class="wide">
+<div class="main">
+<h1><a href="/"><img src="<%= @theme.path %>/images/h1.png" width="534" height="144" alt="Tokyo PayPal Developers Group"></a></h1>
+</div><!-- .main -->
+<div class="sub clearfix">
+<nav class="global clearfix">
+<ul class="clearfix">
+<li><a href="/about">About</a></li>
+</ul>
+</nav>
+</div>
+</div><!-- #header -->
+
+<div id="body" class="wide">
+
+<% unless index? %>
+<div class="bread_crumbs wide"><%= bread_crumb %></div>
+<% end %>
+
+<% if page? %>
+<div id="page" class="wide">
+<%= yield %>
+</div><!-- #main -->
+<% else %>
+<div id="main">
+<%= yield %>
+</div><!-- #main -->
+<% end %>
+
+<% unless page? %>
+<div id="sub">
+<nav>
+<ul>
+<% Post.recent(5).each do |post| %>
+<li>
+<p class="title"><a href="<%= post.link %>"><%= post.title %></a></p>
+<p class="date"><span class="day"><%= post.created_at.strftime('%d') %></span>
+<span class="mounth"><%=  post.created_at.strftime('%b') %></span>
+<span class="year"><%= post.created_at.year %></span></p>
+</li>
+<% end %>
+</ul>
+</nav>
+</div><!-- #sub -->
+<% end %>
+
+</div><!-- #body -->
+
+<div id="footer" class="wide clearfix">
+<p class="logo"><a href="/"><img src="<%= @theme.path %>/images/footer_logo.gif" width="230" height="65" alt="paypal"></a></p>
+<div class="copy">&copy; 2011 <a href="/"><%= @site.title %></a> All rights reserved.</div>
+<div class="poweredby">powered by <a href="http://lokka.org/">Lokka</a></div>
+</div>
+<%= footer %>
+</body>
+</html>
