@@ -48,8 +48,49 @@
 </div><!-- #main -->
 <% end %>
 
+
 <% unless page? %>
 <div id="sub">
+
+<% if index? %>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: '#topaymeetup',
+  interval: 6000,
+  title: 'Tokyo PayPal Developers Group',
+  subject: '#topaymeetup',
+  width: 320,
+  height: 400,
+  theme: {
+    shell: {
+      background: '#45cdfe',
+      color: '#f828a1'
+    },
+    tweets: {
+      background: '#eeeeee',
+      color: '#444444',
+      links: '#1985b5'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: 'all'
+  }
+}).render().start();
+</script>
+<br />
+<% end %>
+
+
 <nav>
 <ul>
 <% Post.recent(5).each do |post| %>
