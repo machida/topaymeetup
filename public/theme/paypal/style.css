@@ -155,13 +155,13 @@ body {
 }
 #header .sub {
   float: left;
-  width: 300px;
+  width: 360px;
+  padding-top: 54px;
 }
 #header .sub .global {
   clear: both;
 }
 #header .sub .global {
-  margin-top: 133px;
   float: left;
   height: 30px;
   padding-top: 10px;
@@ -484,4 +484,23 @@ h1 a {
   font-size: 13px;
   line-height: 1.4;
   overflow: auto;
+}
+#header .sub .join a {
+  background-image: url(images/join.png);
+  height: 53px;
+  width: 238px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  text-indent: -9999px;
+}
+#header .sub .join a:link,
+#header .sub .join a:visited {
+  background-position: left top;
+}
+
+#header .sub .join a:hover,
+#header .sub .join a:active {
+  background-position: left bottom;
 }
