@@ -185,6 +185,7 @@ body {
   line-height: 30px;
   font-family: 'Copse', serif;
   font-size: 16px;
+  margin-right: 8px;
 }
 #header .sub .global li a:link,
 #header .sub .global li a:visited {
