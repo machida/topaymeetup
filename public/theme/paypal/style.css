@@ -185,7 +185,7 @@ body {
   line-height: 30px;
   font-family: 'Copse', serif;
   font-size: 16px;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 #header .sub .global li a:link,
 #header .sub .global li a:visited {
@@ -220,7 +220,8 @@ body {
   margin-left: 15px;
   font-family: 'Copse', serif;
   margin-top: -3px;
-  text-shadow:#CCC 0px 1px 1px;
+  text-shadow:#CCC 0px 1px 0px;
+  font-weight: bold;
  }
 .page header h1 {
   font-size: 28px;
@@ -252,11 +253,27 @@ body {
   line-height: 1.7;
   margin-bottom:1.6em;
 }
+#body section p.checkout {
+  background-color: #CCC;
+  display: block;
+  box-shadow:inset #999 0px 1px 2px;
+  padding-top: 8px;
+  padding-right: 18px;
+  padding-bottom: 8px;
+  padding-left: 18px;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #555;
+  font-weight: bold;
+  text-shadow:#ddd 0px 1px 0px;
+  margin-bottom: 35px;
+}
 #body section h2 {
   font-size: 26px;
   margin-bottom: 25px;
   color: #CE067D;
   font-family: 'Copse', sun-serif;
+  line-height: 1.6;
 }
 #body section h3 {
   font-size: 20px;
